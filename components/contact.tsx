@@ -4,8 +4,8 @@ import { SectionHeading } from '@/components/section-heading'
 import { CopyEmail } from '@/components/copy-email'
 
 const socials = [
-  { label: 'GitHub', href: 'https://github.com' },
-  { label: 'LinkedIn', href: 'https://linkedin.com' },
+  { label: 'GitHub', href: 'https://github.com/Harunrashid444' },
+  { label: 'LinkedIn', href: 'https://linkedin.com/in/harunrashiid' },
   { label: '+91 62051 23161', href: 'tel:+916205123161' },
   { label: 'Greater Noida, IN', href: 'https://maps.google.com/?q=NRI+City+Greater+Noida' },
 ]
