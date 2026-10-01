@@ -5,30 +5,30 @@ import { SectionHeading } from '@/components/section-heading'
 
 const projects = [
   {
-    title: 'Ledger',
-    year: '2025',
+    title: 'TerraScope',
+    year: 'Ongoing · Technical Lead',
     description:
-      'A privacy-first personal finance dashboard with real-time bank sync and beautiful, glanceable charts.',
-    tags: ['Next.js', 'PostgreSQL', 'Plaid'],
-    image: '/projects/ledger.png',
+      'AI real estate investment analytics platform built under a Texas university professor. A FastAPI + PostgreSQL/PostGIS backend serves 487,000+ property parcels from TCAD, Zillow ZHVI, permits, and auction records through 40+ REST endpoints, with weekly alerts across 146 ZIP zones and a MapLibre-powered Next.js map.',
+    tags: ['FastAPI', 'PostGIS', 'Next.js', 'MapLibre GL'],
+    image: '/projects/terrascope.png',
     href: '#',
   },
   {
-    title: 'Fieldnotes',
-    year: '2024',
+    title: 'AI Nutrition',
+    year: 'IBM SkillsBuild',
     description:
-      'A local-first markdown editor with instant search, backlinks, and conflict-free sync across devices.',
-    tags: ['React', 'CRDTs', 'Electron'],
-    image: '/projects/fieldnotes.png',
+      'An AI-powered nutrition recommendation agent built with IBM Bob in two days, applying prompt engineering and generative AI to deliver personalized dietary suggestions.',
+    tags: ['Generative AI', 'Prompt Engineering', 'IBM Bob'],
+    image: '/projects/ai-nutrition.png',
     href: '#',
   },
   {
-    title: 'Pulse',
-    year: '2023',
+    title: 'Personal Portfolio',
+    year: 'Web',
     description:
-      'Lightweight uptime monitoring for indie developers, with streaming logs and smart incident alerts.',
-    tags: ['Go', 'WebSockets', 'Tailwind'],
-    image: '/projects/pulse.png',
+      'A responsive personal website showcasing projects, technical skills, certifications, and contact details with a clean, interactive UI.',
+    tags: ['React', 'TypeScript', 'Tailwind CSS'],
+    image: '/projects/portfolio.png',
     href: '#',
   },
 ]

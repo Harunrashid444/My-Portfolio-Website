@@ -2,15 +2,43 @@ import { Reveal } from '@/components/reveal'
 import { SectionHeading } from '@/components/section-heading'
 
 const stats = [
-  { value: '7+', label: 'Years shipping' },
-  { value: '40+', label: 'Projects delivered' },
-  { value: '12', label: 'Open-source libs' },
+  { value: '487K+', label: 'Property parcels served' },
+  { value: '40+', label: 'REST endpoints shipped' },
+  { value: '2', label: 'Research publications' },
 ]
 
 const experience = [
-  { period: '2022 — Now', role: 'Senior Engineer', company: 'Northwind Labs' },
-  { period: '2019 — 2022', role: 'Frontend Engineer', company: 'Studio Parallel' },
-  { period: '2017 — 2019', role: 'Web Developer', company: 'Freelance' },
+  { period: '2026 — Now', role: 'Technical Lead', company: 'TerraScope' },
+  { period: 'Jun — Sep 2026', role: 'Agent Full Stack Developer', company: 'GrowwStaff' },
+  { period: '2025 — 2027', role: 'MCA', company: 'GL Bajaj, AKTU' },
+  { period: '2024', role: 'BCA', company: 'P.K. Roy Memorial College' },
+]
+
+const skills = [
+  { group: 'Languages', items: 'Java, Python, JavaScript, TypeScript, C' },
+  { group: 'Frontend', items: 'React, Next.js, HTML5, CSS3, MapLibre' },
+  { group: 'Backend', items: 'FastAPI, Uvicorn, SQLAlchemy, Alembic' },
+  { group: 'Data', items: 'SQL, PostgreSQL, PostGIS' },
+  { group: 'AI & Tools', items: 'Generative AI, Agentic AI, Copilot, GitHub' },
+]
+
+const publications = [
+  {
+    title:
+      'Artificial Intelligence in Real Estate: A Literature Review of Valuation, Digital Infrastructure, Investment Analytics and Business Communication',
+    venue: 'Society of North American Scholars (SNAS), USA',
+  },
+  {
+    title:
+      'What Readers Want: Five Gaps in AI-STEM Education Literature and a Roadmap for Multilingual Learners',
+    venue: 'London International Conference (LIC), UK',
+  },
+]
+
+const certifications = [
+  'Introduction to Generative AI — Amazon AWS',
+  'Introduction to Modern AI — Cisco Networking Academy',
+  'Cloud Essentials Knowledge Badge Readiness Path — Amazon AWS',
 ]
 
 export function About() {
@@ -22,17 +50,19 @@ export function About() {
         <Reveal className="space-y-5 text-lg leading-relaxed text-muted-foreground md:col-span-3">
           <p>
             {
-              "I'm a full-stack developer with a soft spot for interfaces. Over the past seven years I've helped startups and studios turn rough ideas into products people genuinely enjoy using."
+              "I'm an MCA student and full-stack developer who builds end-to-end web applications — from backend APIs to interactive frontends."
             }
           </p>
           <p>
-            My work sits where design meets engineering — I care as much about a{' '}
-            <span className="text-foreground">well-named function</span> as I do about a{' '}
-            <span className="text-foreground">perfectly timed transition</span>.
+            I currently lead a 3-member team as{' '}
+            <span className="text-foreground">Technical Lead on TerraScope</span>, an AI real estate
+            analytics platform, and I&apos;m comfortable across{' '}
+            <span className="text-foreground">Java, Python, JavaScript and the MERN stack</span> with
+            hands-on experience in REST API design, relational data modelling, and responsive UI.
           </p>
           <p>
             {
-              "When I'm away from the keyboard, you'll find me brewing pour-overs, reading about typography, or hiking the coast."
+              "Outside of code, I've volunteered as lead guide for international professors at the Hizmet Conference, reached the finals of the GL Bajaj Bug Bounty Challenge 2026, and speak English (C2) with beginner Arabic."
             }
           </p>
         </Reveal>
@@ -40,7 +70,7 @@ export function About() {
         <Reveal delay={150} className="md:col-span-2">
           <ol className="divide-y divide-border border-y border-border">
             {experience.map((item) => (
-              <li key={item.period} className="group flex flex-col gap-1 py-4">
+              <li key={`${item.role}-${item.period}`} className="group flex flex-col gap-1 py-4">
                 <span className="font-mono text-xs text-muted-foreground">{item.period}</span>
                 <span className="font-medium transition-transform duration-300 group-hover:translate-x-1">
                   {item.role}
@@ -56,13 +86,56 @@ export function About() {
         {stats.map((stat, i) => (
           <Reveal key={stat.label} delay={i * 120}>
             <dt className="sr-only">{stat.label}</dt>
-            <dd className="font-serif text-5xl tracking-tight md:text-6xl">{stat.value}</dd>
+            <dd className="font-serif text-4xl tracking-tight md:text-6xl">{stat.value}</dd>
             <p aria-hidden="true" className="mt-1 text-sm text-muted-foreground">
               {stat.label}
             </p>
           </Reveal>
         ))}
       </dl>
+
+      <div className="mt-20 grid gap-12 md:grid-cols-2">
+        <Reveal>
+          <h3 className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Skills</h3>
+          <dl className="mt-5 divide-y divide-border border-y border-border">
+            {skills.map((skill) => (
+              <div key={skill.group} className="grid grid-cols-3 gap-4 py-3 text-sm">
+                <dt className="text-muted-foreground">{skill.group}</dt>
+                <dd className="col-span-2">{skill.items}</dd>
+              </div>
+            ))}
+          </dl>
+        </Reveal>
+
+        <Reveal delay={120} className="space-y-10">
+          <div>
+            <h3 className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
+              Publications
+            </h3>
+            <ul className="mt-5 space-y-4">
+              {publications.map((pub) => (
+                <li key={pub.title} className="border-l-2 border-accent/60 pl-4">
+                  <p className="text-pretty text-sm leading-relaxed">{pub.title}</p>
+                  <p className="mt-1 text-xs text-muted-foreground">{pub.venue}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
+              Certifications
+            </h3>
+            <ul className="mt-5 space-y-2 text-sm">
+              {certifications.map((cert) => (
+                <li key={cert} className="flex items-start gap-3">
+                  <span aria-hidden="true" className="mt-2 size-1.5 shrink-0 rotate-45 bg-accent" />
+                  {cert}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </Reveal>
+      </div>
     </section>
   )
 }

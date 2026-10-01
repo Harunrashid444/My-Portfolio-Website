@@ -28,14 +28,14 @@ export function Hero() {
           <span className="absolute inline-flex size-full animate-ping rounded-full bg-accent opacity-60" />
           <span className="relative inline-flex size-2 rounded-full bg-accent" />
         </span>
-        Full-stack developer · Lisbon
+        Full-stack developer · Greater Noida
       </p>
 
       <h1
         className="mt-6 max-w-3xl animate-fade-up text-balance font-serif text-5xl leading-[1.05] tracking-tight md:text-7xl"
         style={{ animationDelay: '120ms' }}
       >
-        I build calm, considered software for the <em className="text-accent">web</em>
+        I build end-to-end products, from API to <em className="text-accent">interface</em>
         <span aria-hidden="true" className="ml-1 inline-block animate-blink text-accent">
           _
         </span>
@@ -46,7 +46,7 @@ export function Hero() {
         style={{ animationDelay: '240ms' }}
       >
         {
-          "Hi, I'm Alex — a developer who cares about the details: fast interfaces, clear APIs, and products that feel effortless to use."
+          "Hi, I'm Harun Rashid Ansari — an MCA student and full-stack developer working with React, Python & FastAPI, currently leading the TerraScope team."
         }
       </p>
 

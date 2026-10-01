@@ -6,8 +6,8 @@ import { CopyEmail } from '@/components/copy-email'
 const socials = [
   { label: 'GitHub', href: 'https://github.com' },
   { label: 'LinkedIn', href: 'https://linkedin.com' },
-  { label: 'X / Twitter', href: 'https://x.com' },
-  { label: 'Read.cv', href: 'https://read.cv' },
+  { label: '+91 62051 23161', href: 'tel:+916205123161' },
+  { label: 'Greater Noida, IN', href: 'https://maps.google.com/?q=NRI+City+Greater+Noida' },
 ]
 
 export function Contact() {
@@ -26,7 +26,7 @@ export function Contact() {
       </Reveal>
 
       <Reveal delay={120} className="mt-10">
-        <CopyEmail email="hello@alexmorgan.dev" />
+        <CopyEmail email="harunrashidwork@gmail.com" />
       </Reveal>
 
       <Reveal delay={220} className="mt-14">

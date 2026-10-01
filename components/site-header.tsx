@@ -9,7 +9,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
         <a href="#top" className="font-serif text-2xl leading-none tracking-tight">
-          Alex Morgan<span className="text-accent">.</span>
+          Harun Rashid<span className="text-accent">.</span>
         </a>
         <nav aria-label="Primary">
           <ul className="flex items-center gap-1 text-sm">

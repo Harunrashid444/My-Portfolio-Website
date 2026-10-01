@@ -1,14 +1,15 @@
 const stack = [
-  'TypeScript',
   'React',
   'Next.js',
-  'Node.js',
+  'TypeScript',
+  'Python',
+  'FastAPI',
+  'Java',
   'PostgreSQL',
-  'Tailwind CSS',
-  'GraphQL',
-  'Go',
-  'Docker',
-  'Figma',
+  'PostGIS',
+  'MapLibre',
+  'MERN Stack',
+  'Generative AI',
 ]
 
 export function StackMarquee() {

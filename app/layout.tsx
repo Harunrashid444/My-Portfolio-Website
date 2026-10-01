@@ -13,9 +13,9 @@ const instrumentSerif = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
-  title: 'Alex Morgan — Software Developer',
+  title: 'Harun Rashid Ansari — Full-Stack Developer',
   description:
-    'Portfolio of Alex Morgan, a full-stack developer building thoughtful, fast, and accessible products for the web.',
+    'Portfolio of Harun Rashid Ansari, an MCA student and full-stack developer working with React, Python & FastAPI, and Technical Lead on TerraScope.',
   generator: 'v0.app',
   icons: {
     icon: [
