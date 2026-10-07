@@ -11,7 +11,7 @@ const projects = [
       'AI real estate investment analytics platform built under a Texas university professor. A FastAPI + PostgreSQL/PostGIS backend serves 487,000+ property parcels from TCAD, Zillow ZHVI, permits, and auction records through 40+ REST endpoints, with weekly alerts across 146 ZIP zones and a MapLibre-powered Next.js map.',
     tags: ['FastAPI', 'PostGIS', 'Next.js', 'MapLibre GL'],
     image: '/projects/terrascope.png',
-    href: '#',
+    href: 'https://github.com/Harunrashid444/Terrascope',
   },
   {
     title: 'AI Nutrition',
@@ -20,16 +20,25 @@ const projects = [
       'An AI-powered nutrition recommendation agent built with IBM Bob in two days, applying prompt engineering and generative AI to deliver personalized dietary suggestions.',
     tags: ['Generative AI', 'Prompt Engineering', 'IBM Bob'],
     image: '/projects/ai-nutrition.png',
-    href: '#',
+    href: 'https://github.com/Harunrashid444/AI-Nutrition-Agent',
+  },
+  {
+    title: 'Gold Price Analysis & Prediction',
+    year: 'Forecasting dashboard',
+    description:
+      'A 9-screen React 19 + TypeScript dashboard visualising 40 years of gold-price data across two markets, with JWT-protected routes, a persisted dataset switcher and 7 custom charts including correlograms and forecast confidence bands. A typed, abort-aware API layer removes duplicate fetch logic and stale-response races.',
+    tags: ['React 19', 'TypeScript', 'Vite', 'Recharts'],
+    image: '',
+    href: 'https://mygoldprice-wisp-dd7a12.netlify.app/',
   },
   {
     title: 'Personal Portfolio',
     year: 'Web',
     description:
-      'A responsive personal website showcasing projects, technical skills, certifications, and contact details with a clean, interactive UI.',
-    tags: ['React', 'TypeScript', 'Tailwind CSS'],
+      'A responsive personal website built with Next.js, showcasing projects, technical skills, certifications and contact details with a clean, interactive UI.',
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS'],
     image: '/projects/portfolio.png',
-    href: '#',
+    href: 'https://github.com/Harunrashid444/My-Portfolio-Website',
   },
 ]
 
@@ -48,6 +57,8 @@ export function Projects() {
             <Reveal delay={i * 80}>
               <a
                 href={project.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group grid items-center gap-8 md:grid-cols-2"
                 aria-label={`View ${project.title} project`}
               >
