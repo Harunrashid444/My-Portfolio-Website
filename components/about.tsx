@@ -4,41 +4,41 @@ import { SectionHeading } from '@/components/section-heading'
 const stats = [
   { value: '487K+', label: 'Property parcels served' },
   { value: '40+', label: 'REST endpoints shipped' },
-  { value: '2', label: 'Research publications' },
+  { value: '2', label: 'Accepted publications' },
 ]
 
 const experience = [
   { period: '2026 — Now', role: 'Technical Lead', company: 'TerraScope' },
-  { period: 'Jun — Sep 2026', role: 'Agent Full Stack Developer', company: 'GrowwStaff' },
+  { period: 'Jun — Sep 2026', role: 'Agent Full Stack Developer', company: 'GrowwStaff (Contract)' },
   { period: '2025 — 2027', role: 'MCA', company: 'GL Bajaj, AKTU' },
   { period: '2024', role: 'BCA', company: 'P.K. Roy Memorial College' },
 ]
 
 const skills = [
-  { group: 'Languages', items: 'Java, Python, JavaScript, TypeScript, C' },
-  { group: 'Frontend', items: 'React, Next.js, HTML5, CSS3, MapLibre' },
-  { group: 'Backend', items: 'FastAPI, Uvicorn, SQLAlchemy, Alembic' },
-  { group: 'Data', items: 'SQL, PostgreSQL, PostGIS' },
-  { group: 'AI & Tools', items: 'Generative AI, Agentic AI, Copilot, GitHub' },
+  { group: 'Languages', items: 'JavaScript, TypeScript, Python, Java, C' },
+  { group: 'Frontend', items: 'React, Next.js, Tailwind CSS, Recharts, MapLibre GL JS' },
+  { group: 'Backend', items: 'Node.js/Express, FastAPI, SQLAlchemy, Alembic, REST APIs' },
+  { group: 'Data', items: 'SQL, PostgreSQL, PostGIS, MongoDB' },
+  { group: 'AI & Tools', items: 'Git, GitHub, Vite, Postman, Copilot, Generative AI' },
 ]
 
 const publications = [
   {
     title:
       'Artificial Intelligence in Real Estate: A Literature Review of Valuation, Digital Infrastructure, Investment Analytics and Business Communication',
-    venue: 'Society of North American Scholars (SNAS), USA',
+    venue: '5th International SNAS Conference (Society of North American Scholars), USA — Oct 2026',
   },
   {
     title:
       'What Readers Want: Five Gaps in AI-STEM Education Literature and a Roadmap for Multilingual Learners',
-    venue: 'London International Conference (LIC), UK',
+    venue: 'London International Conference (LIC), UK — accepted for presentation',
   },
 ]
 
 const certifications = [
   'Introduction to Generative AI — Amazon AWS',
   'Introduction to Modern AI — Cisco Networking Academy',
-  'Cloud Essentials Knowledge Badge Readiness Path — Amazon AWS',
+  'Cloud Essentials Knowledge Badge Readiness Path (incl. Labs) — Amazon AWS',
 ]
 
 export function About() {
@@ -62,7 +62,7 @@ export function About() {
           </p>
           <p>
             {
-              "Outside of code, I've volunteered as lead guide for international professors at the Hizmet Conference, reached the finals of the GL Bajaj Bug Bounty Challenge 2026, and speak English (C2) with beginner Arabic."
+              "Outside of code, I've volunteered as lead guide at the 3-day International Hizmet Conference (touring a 25-member group of international professors), been a finalist in the GL Bajaj Bug Bounty Challenge 2026, and speak English (C2) with beginner Arabic."
             }
           </p>
         </Reveal>
