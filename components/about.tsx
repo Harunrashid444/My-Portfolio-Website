@@ -22,19 +22,6 @@ const skills = [
   { group: 'AI & Tools', items: 'Git, GitHub, Vite, Postman, Copilot, Generative AI' },
 ]
 
-const publications = [
-  {
-    title:
-      'Artificial Intelligence in Real Estate: A Literature Review of Valuation, Digital Infrastructure, Investment Analytics and Business Communication',
-    venue: '5th International SNAS Conference (Society of North American Scholars), USA — Oct 2026',
-  },
-  {
-    title:
-      'What Readers Want: Five Gaps in AI-STEM Education Literature and a Roadmap for Multilingual Learners',
-    venue: 'London International Conference (LIC), UK — accepted for presentation',
-  },
-]
-
 const certifications = [
   'Introduction to Generative AI — Amazon AWS',
   'Introduction to Modern AI — Cisco Networking Academy',
@@ -108,19 +95,6 @@ export function About() {
         </Reveal>
 
         <Reveal delay={120} className="space-y-10">
-          <div>
-            <h3 className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
-              Publications
-            </h3>
-            <ul className="mt-5 space-y-4">
-              {publications.map((pub) => (
-                <li key={pub.title} className="border-l-2 border-accent/60 pl-4">
-                  <p className="text-pretty text-sm leading-relaxed">{pub.title}</p>
-                  <p className="mt-1 text-xs text-muted-foreground">{pub.venue}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
           <div>
             <h3 className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
               Certifications
