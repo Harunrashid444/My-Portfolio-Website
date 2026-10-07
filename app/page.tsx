@@ -3,6 +3,7 @@ import { Hero } from '@/components/hero'
 import { StackMarquee } from '@/components/stack-marquee'
 import { About } from '@/components/about'
 import { Projects } from '@/components/projects'
+import { Research } from '@/components/research'
 import { Contact } from '@/components/contact'
 import { SiteFooter } from '@/components/site-footer'
 
@@ -15,6 +16,7 @@ export default function Page() {
         <StackMarquee />
         <About />
         <Projects />
+        <Research />
         <Contact />
       </main>
       <SiteFooter />
