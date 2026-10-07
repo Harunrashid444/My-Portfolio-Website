@@ -17,7 +17,7 @@ export function Contact() {
       id="contact"
       className="mx-auto max-w-5xl scroll-mt-20 px-6 py-24"
     >
-      <SectionHeading index="03" title="Contact" id="contact-title" />
+      <SectionHeading index="04" title="Contact" id="contact-title" />
 
       <Reveal>
         <p className="max-w-2xl text-balance font-serif text-4xl leading-tight tracking-tight md:text-5xl">
