@@ -35,8 +35,10 @@ export function Contact() {
             <li key={social.label} className="bg-background">
               <a
                 href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
+                {...(social.href.startsWith('http') && {
+                  target: '_blank',
+                  rel: 'noopener noreferrer',
+                })}
                 className="group flex items-center justify-between px-5 py-5 text-sm transition-colors hover:bg-card"
               >
                 {social.label}
