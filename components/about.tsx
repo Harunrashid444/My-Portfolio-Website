@@ -71,12 +71,9 @@ export function About() {
 
       <dl className="mt-16 grid grid-cols-3 gap-6">
         {stats.map((stat, i) => (
-          <Reveal key={stat.label} delay={i * 120}>
-            <dt className="sr-only">{stat.label}</dt>
+          <Reveal key={stat.label} delay={i * 120} className="flex flex-col-reverse">
+            <dt className="mt-1 text-sm text-muted-foreground">{stat.label}</dt>
             <dd className="font-serif text-4xl tracking-tight md:text-6xl">{stat.value}</dd>
-            <p aria-hidden="true" className="mt-1 text-sm text-muted-foreground">
-              {stat.label}
-            </p>
           </Reveal>
         ))}
       </dl>
