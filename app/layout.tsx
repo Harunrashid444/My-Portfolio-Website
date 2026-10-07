@@ -16,7 +16,6 @@ export const metadata: Metadata = {
   title: 'Harun Rashid Ansari — Full-Stack Developer',
   description:
     'Portfolio of Harun Rashid Ansari, an MCA student and full-stack developer working with React, Python & FastAPI, and Technical Lead on TerraScope.',
-  generator: 'v0.app',
   icons: {
     icon: [
       { url: '/icon-light-32x32.png', media: '(prefers-color-scheme: light)' },
