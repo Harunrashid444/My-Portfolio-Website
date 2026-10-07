@@ -1,33 +1,37 @@
-# My-Portfolio-Website
+# My Portfolio Website
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+Personal portfolio of Harun Rashid Ansari — full-stack developer and MCA student.
 
-## Built with v0
+**Live:** [folio-harunn.vercel.app](https://folio-harunn.vercel.app)
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+## Stack
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_UL5SSfL3OT4trOW5wMhsTlmHCN2C)
+- [Next.js](https://nextjs.org) (App Router) + React 19 + TypeScript
+- Tailwind CSS v4
+- Deployed on Vercel (every push to `main` deploys)
 
-## Getting Started
-
-First, run the development server:
+## Running locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Other scripts: `pnpm build`, `pnpm start`, `pnpm typecheck`.
 
-## Learn More
+## Editing content
 
-To learn more, take a look at the following resources:
+Each homepage section is its own component in `components/`, with its content in a plain array at the top of the file:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+| Section | File |
+| --- | --- |
+| Hero | `components/hero.tsx` |
+| About, experience, skills, certifications | `components/about.tsx` |
+| Projects | `components/projects.tsx` (screenshots in `public/projects/`) |
+| Research | `components/research.tsx` |
+| Contact | `components/contact.tsx` |
+| Tech strip | `components/stack-marquee.tsx` |
+
+Sections are assembled in `app/page.tsx`.
