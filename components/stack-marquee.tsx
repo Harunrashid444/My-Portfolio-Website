@@ -4,6 +4,8 @@ const stack = [
   'TypeScript',
   'Python',
   'FastAPI',
+  'Node.js',
+  'Tailwind CSS',
   'Java',
   'PostgreSQL',
   'PostGIS',
