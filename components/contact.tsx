@@ -15,7 +15,7 @@ export function Contact() {
     <section
       aria-labelledby="contact-title"
       id="contact"
-      className="mx-auto max-w-5xl scroll-mt-28 sm:scroll-mt-20 px-6 py-24"
+      className="mx-auto max-w-6xl scroll-mt-28 sm:scroll-mt-20 px-6 py-24"
     >
       <SectionHeading index="04" title="Contact" id="contact-title" />
 
