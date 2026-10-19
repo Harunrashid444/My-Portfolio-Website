@@ -17,16 +17,19 @@ export function Hero() {
             <span className="absolute inline-flex size-full animate-ping rounded-full bg-accent opacity-60" />
             <span className="relative inline-flex size-2 rounded-full bg-accent" />
           </span>
-          Full-stack developer · Greater Noida
+          Full-Stack Developer · Technical Lead
         </p>
 
         <h1
-          className="mt-6 animate-fade-up text-balance font-serif text-5xl leading-[1.05] tracking-tight lg:text-7xl md:text-6xl"
+          className="mt-6 animate-fade-up text-balance font-serif text-[2.5rem] leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
           style={{ animationDelay: '120ms' }}
         >
-          I build end-to-end products, from API to <em className="text-accent">interface</em>
-          <span aria-hidden="true" className="ml-1 inline-block animate-blink text-accent">
-            _
+          Hello, I&apos;m
+          <span className="block">
+            Harun Rashid Ansari
+            <span aria-hidden="true" className="ml-1 inline-block animate-blink text-accent">
+              _
+            </span>
           </span>
         </h1>
 
@@ -34,9 +37,10 @@ export function Hero() {
           className="mt-6 max-w-xl animate-fade-up text-pretty text-lg leading-relaxed text-muted-foreground"
           style={{ animationDelay: '240ms' }}
         >
-          {
-            "Hi, I'm Harun Rashid Ansari — an MCA student and full-stack developer working with React, Python & FastAPI, currently leading the TerraScope team."
-          }
+          I&apos;m a <span className="font-medium text-accent">Full-Stack Developer</span> and MCA
+          student based in Greater Noida, India. I build end-to-end web applications — from
+          FastAPI and PostgreSQL backends to React and Next.js interfaces — and currently lead the
+          TerraScope team as <span className="font-medium text-foreground">Technical Lead</span>.
         </p>
 
         <div
