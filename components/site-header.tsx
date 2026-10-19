@@ -7,10 +7,10 @@ const links = [
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-md">
-      <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
-        <a href="#top" className="font-serif text-2xl leading-none tracking-tight">
-          Harun Rashid<span className="text-accent">.</span>
+    <header className="sticky top-0 z-40 border-b border-border bg-card">
+      <div className="mx-auto flex max-w-5xl flex-col items-center gap-1 px-6 pt-3 pb-1 sm:h-16 sm:flex-row sm:justify-between sm:p-0 sm:px-6">
+        <a href="#top" className="whitespace-nowrap font-serif text-2xl leading-none tracking-tight">
+          Harun Rashid Ansari<span className="text-accent">.</span>
         </a>
         <nav aria-label="Primary">
           <ul className="flex items-center gap-1 text-sm">
