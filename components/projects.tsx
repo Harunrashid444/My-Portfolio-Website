@@ -47,7 +47,7 @@ export function Projects() {
     <section
       aria-labelledby="projects-title"
       id="projects"
-      className="mx-auto max-w-5xl scroll-mt-20 px-6 py-24"
+      className="mx-auto max-w-5xl scroll-mt-28 sm:scroll-mt-20 px-6 py-24"
     >
       <SectionHeading index="02" title="Selected projects" id="projects-title" />
 
