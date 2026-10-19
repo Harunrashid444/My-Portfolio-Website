@@ -47,7 +47,7 @@ export function Projects() {
     <section
       aria-labelledby="projects-title"
       id="projects"
-      className="mx-auto max-w-5xl scroll-mt-28 sm:scroll-mt-20 px-6 py-24"
+      className="mx-auto max-w-6xl scroll-mt-28 sm:scroll-mt-20 px-6 py-24"
     >
       <SectionHeading index="02" title="Selected projects" id="projects-title" />
 
@@ -70,7 +70,7 @@ export function Projects() {
                     alt={`Screenshot of ${project.title}`}
                     width={1280}
                     height={800}
-                    sizes="(min-width: 1024px) 480px, (min-width: 768px) 50vw, 100vw"
+                    sizes="(min-width: 1152px) 540px, (min-width: 768px) 50vw, 100vw"
                     className="aspect-[16/10] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                   />
                 </div>
