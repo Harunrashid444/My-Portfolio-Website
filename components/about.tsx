@@ -10,24 +10,58 @@ const stats = [
 const experience = [
   { period: '2026 — Now', role: 'Technical Lead', company: 'TerraScope' },
   { period: 'Jun — Sep 2026', role: 'Full Stack Developer', company: 'GrowwStaff (Contract)' },
-  { period: '2025 — 2027', role: 'MCA', company: 'GL Bajaj, AKTU' },
-  { period: '2024', role: 'BCA', company: 'P.K. Roy Memorial College' },
+  { period: '2025 — 2027', role: 'MCA', company: 'GL Bajaj College of Technology and Management, AKTU' },
+  { period: '2024', role: 'BCA', company: 'P.K. Roy Memorial College, Binod Bihari Mahato Koylanchal University' },
 ]
 
 const skills = [
-  { group: 'Languages', items: 'Python, JavaScript, TypeScript, Java, C, SQL' },
-  { group: 'Frontend', items: 'React, Next.js, Tailwind CSS, Recharts, MapLibre GL JS, HTML5, CSS3' },
-  { group: 'Backend', items: 'FastAPI, Node.js/Express, REST API design, JWT auth, SQLAlchemy, Alembic' },
+  { group: 'Languages', items: 'Python, JavaScript, Java, C, SQL' },
+  { group: 'Frontend', items: 'React, Tailwind CSS, Recharts, MapLibre GL JS, HTML5, CSS3' },
+  { group: 'Backend', items: 'FastAPI, Node.js, REST API design, JWT auth, SQLAlchemy, Alembic' },
   { group: 'Databases', items: 'PostgreSQL/PostGIS, MongoDB, SQL, Redis' },
-  { group: 'AI / ML', items: 'pandas, scikit-learn, statsmodels, Generative AI, RAG, multi-agent workflows' },
-  { group: 'Tools', items: 'Git, GitHub, Docker, Vite, Postman, Vercel, GitHub Copilot' },
+  { group: 'AI & Tools', items: 'Generative AI, Agentic AI, Git, GitHub, Docker, Postman, Vercel, GitHub Copilot' },
 ]
 
 const certifications = [
-  'Introduction to Generative AI — Amazon AWS',
-  'Introduction to Modern AI — Cisco Networking Academy',
-  'Cloud Essentials Knowledge Badge Readiness Path (incl. Labs) — Amazon AWS',
-  'IBM SkillsBuild certifications (Design and Lab) — IBM',
+  {
+    title: 'AWS Certified Generative AI Developer – Professional (AIP-C01): Official Practice Question Set',
+    issuer: 'AWS Training & Certification',
+    date: 'Jun 2026',
+  },
+  {
+    title: 'Introduction to Generative AI – Art of the Possible',
+    issuer: 'AWS Training & Certification',
+    date: 'Jun 2026',
+  },
+  {
+    title: 'Cloud Essentials Knowledge Badge Readiness Path (incl. Labs)',
+    issuer: 'AWS Training & Certification',
+    date: null,
+  },
+  { title: 'Introduction to Modern AI', issuer: 'Cisco Networking Academy', date: 'Jun 2026' },
+  {
+    title: 'Getting Started with Artificial Intelligence',
+    issuer: 'IBM SkillsBuild',
+    date: 'Jul 2026',
+    href: 'https://www.credly.com/badges/0cd5c8b4-74ee-4251-a882-f00f0bcd839b',
+  },
+  { title: 'Lab: Troubleshoot Your Code Using IBM Bob', issuer: 'IBM SkillsBuild', date: 'Jul 2026' },
+  {
+    title: 'Edunet University Engagements – Advanced Guided Learning Experience 2026-27',
+    issuer: 'IBM SkillsBuild',
+    date: 'Jul 2026',
+  },
+  {
+    title: 'Introduction to Full-Stack Web Development',
+    issuer: 'VOIS (Vodafone Idea Foundation) × Edunet Foundation',
+    date: 'Jul 2026',
+  },
+  {
+    title: 'Basics of Linux Operating System',
+    issuer: 'VOIS (Vodafone Idea Foundation) × Edunet Foundation',
+    date: 'Jul 2026',
+  },
+  { title: 'EF SET English Certificate — C2 Proficient', issuer: 'EF Education First', date: 'Jun 2026' },
 ]
 
 export function About() {
@@ -80,34 +114,49 @@ export function About() {
         ))}
       </dl>
 
-      <div className="mt-20 grid gap-12 md:grid-cols-2">
-        <Reveal>
-          <h3 className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Skills</h3>
-          <dl className="mt-5 divide-y divide-border border-y border-border">
-            {skills.map((skill) => (
-              <div key={skill.group} className="grid grid-cols-3 gap-4 py-3 text-sm">
-                <dt className="text-muted-foreground">{skill.group}</dt>
-                <dd className="col-span-2">{skill.items}</dd>
-              </div>
-            ))}
-          </dl>
-        </Reveal>
+      <Reveal className="mt-20">
+        <h3 className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Skills</h3>
+        <dl className="mt-5 divide-y divide-border border-y border-border">
+          {skills.map((skill) => (
+            <div key={skill.group} className="grid gap-1 py-3 text-sm sm:grid-cols-4 sm:gap-4">
+              <dt className="text-muted-foreground">{skill.group}</dt>
+              <dd className="sm:col-span-3">{skill.items}</dd>
+            </div>
+          ))}
+        </dl>
+      </Reveal>
 
-        <Reveal delay={120} className="space-y-10">
-          <div>
-            <h3 className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
-              Certifications
-            </h3>
-            <ul className="mt-5 space-y-2 text-sm">
-              {certifications.map((cert) => (
-                <li key={cert} className="flex items-start gap-3">
-                  <span aria-hidden="true" className="mt-2 size-1.5 shrink-0 rotate-45 bg-accent" />
-                  {cert}
-                </li>
-              ))}
-            </ul>
-          </div>
+      <div className="mt-16">
+        <Reveal>
+          <h3 className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
+            Certifications
+          </h3>
         </Reveal>
+        <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {certifications.map((cert, i) => (
+            <li key={cert.title}>
+              <Reveal delay={(i % 3) * 80} className="h-full">
+                <div className="flex h-full flex-col rounded-xl border border-border bg-card p-5 transition-colors hover:border-accent/50">
+                  <p className="text-pretty text-sm font-medium leading-snug">{cert.title}</p>
+                  <p className="mt-2 text-xs text-muted-foreground">{cert.issuer}</p>
+                  <div className="mt-auto flex items-center justify-between gap-3 pt-4 font-mono text-xs text-muted-foreground">
+                    <span>{cert.date}</span>
+                    {cert.href && (
+                      <a
+                        href={cert.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-accent underline-offset-4 hover:underline"
+                      >
+                        Verify ↗
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </Reveal>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   )
