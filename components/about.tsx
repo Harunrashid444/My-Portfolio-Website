@@ -9,23 +9,25 @@ const stats = [
 
 const experience = [
   { period: '2026 — Now', role: 'Technical Lead', company: 'TerraScope' },
-  { period: 'Jun — Sep 2026', role: 'Agent Full Stack Developer', company: 'GrowwStaff (Contract)' },
+  { period: 'Jun — Sep 2026', role: 'Full Stack Developer', company: 'GrowwStaff (Contract)' },
   { period: '2025 — 2027', role: 'MCA', company: 'GL Bajaj, AKTU' },
   { period: '2024', role: 'BCA', company: 'P.K. Roy Memorial College' },
 ]
 
 const skills = [
-  { group: 'Languages', items: 'JavaScript, TypeScript, Python, Java, C' },
-  { group: 'Frontend', items: 'React, Next.js, Tailwind CSS, Recharts, MapLibre GL JS' },
-  { group: 'Backend', items: 'Node.js/Express, FastAPI, SQLAlchemy, Alembic, REST APIs' },
-  { group: 'Data', items: 'SQL, PostgreSQL, PostGIS, MongoDB' },
-  { group: 'AI & Tools', items: 'Git, GitHub, Vite, Postman, Copilot, Generative AI' },
+  { group: 'Languages', items: 'Python, JavaScript, TypeScript, Java, C, SQL' },
+  { group: 'Frontend', items: 'React, Next.js, Tailwind CSS, Recharts, MapLibre GL JS, HTML5, CSS3' },
+  { group: 'Backend', items: 'FastAPI, Node.js/Express, REST API design, JWT auth, SQLAlchemy, Alembic' },
+  { group: 'Databases', items: 'PostgreSQL/PostGIS, MongoDB, SQL, Redis' },
+  { group: 'AI / ML', items: 'pandas, scikit-learn, statsmodels, Generative AI, RAG, multi-agent workflows' },
+  { group: 'Tools', items: 'Git, GitHub, Docker, Vite, Postman, Vercel, GitHub Copilot' },
 ]
 
 const certifications = [
   'Introduction to Generative AI — Amazon AWS',
   'Introduction to Modern AI — Cisco Networking Academy',
   'Cloud Essentials Knowledge Badge Readiness Path (incl. Labs) — Amazon AWS',
+  'IBM SkillsBuild certifications (Design and Lab) — IBM',
 ]
 
 export function About() {
@@ -36,16 +38,16 @@ export function About() {
       <div className="grid gap-12 md:grid-cols-5">
         <Reveal className="space-y-5 text-lg leading-relaxed text-muted-foreground md:col-span-3">
           <p>
-            {
-              "I'm an MCA student and full-stack developer who builds end-to-end web applications — from backend APIs to interactive frontends."
-            }
+            I&apos;m an MCA student and{' '}
+            <span className="text-foreground">full-stack developer</span> who builds end-to-end
+            applications — from data pipelines and REST APIs to responsive React interfaces.
           </p>
           <p>
-            I currently lead a 3-member team as{' '}
-            <span className="text-foreground">Technical Lead on TerraScope</span>, an AI real estate
-            analytics platform, and I&apos;m comfortable across{' '}
-            <span className="text-foreground">Java, Python, JavaScript and the MERN stack</span> with
-            hands-on experience in REST API design, relational data modelling, and responsive UI.
+            I lead a 3-member team as{' '}
+            <span className="text-foreground">Technical Lead on TerraScope</span>, an AI-driven real
+            estate analytics platform over 487,000+ property parcels, and recently completed a
+            3-month remote contract delivering MERN-stack work at GrowwStaff. I also build
+            time-series ML pipelines, multi-agent AI apps and browser extensions.
           </p>
           <p>
             {
