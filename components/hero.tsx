@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="mx-auto grid max-w-5xl items-center gap-12 px-6 pb-20 pt-12 md:grid-cols-[1.35fr_1fr] md:gap-16 md:pb-28 md:pt-24"
+      className="mx-auto grid max-w-6xl items-center gap-12 px-6 pb-20 pt-12 md:grid-cols-[1.35fr_1fr] md:gap-16 md:pb-28 md:pt-24"
     >
       <div>
         <p
@@ -60,7 +60,7 @@ export function Hero() {
       </div>
 
       <div
-        className="relative order-first mx-auto w-full max-w-[280px] animate-fade-up md:order-none md:max-w-none"
+        className="relative order-first mx-auto w-full max-w-[280px] animate-fade-up md:order-none md:mr-0 md:max-w-[400px]"
         style={{ animationDelay: '200ms' }}
       >
         <div className="rounded-3xl border border-border bg-card p-2 shadow-[0_24px_60px_-28px_oklch(0.22_0.01_60/0.35)]">
@@ -69,7 +69,7 @@ export function Hero() {
             alt="Portrait of Harun Rashid Ansari"
             placeholder="blur"
             preload
-            sizes="(min-width: 1024px) 380px, (min-width: 768px) 35vw, 280px"
+            sizes="(min-width: 1024px) 400px, (min-width: 768px) 38vw, 280px"
             className="aspect-[4/5] w-full rounded-2xl object-cover"
           />
         </div>
