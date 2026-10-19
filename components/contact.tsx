@@ -15,7 +15,7 @@ export function Contact() {
     <section
       aria-labelledby="contact-title"
       id="contact"
-      className="mx-auto max-w-5xl scroll-mt-20 px-6 py-24"
+      className="mx-auto max-w-5xl scroll-mt-28 sm:scroll-mt-20 px-6 py-24"
     >
       <SectionHeading index="04" title="Contact" id="contact-title" />
 
@@ -32,14 +32,14 @@ export function Contact() {
       <Reveal delay={220} className="mt-14">
         <ul className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-border bg-border md:grid-cols-4">
           {socials.map((social) => (
-            <li key={social.label} className="bg-background">
+            <li key={social.label} className="bg-card">
               <a
                 href={social.href}
                 {...(social.href.startsWith('http') && {
                   target: '_blank',
                   rel: 'noopener noreferrer',
                 })}
-                className="group flex items-center justify-between px-5 py-5 text-sm transition-colors hover:bg-card"
+                className="group flex items-center justify-between px-5 py-5 text-sm transition-colors hover:bg-muted"
               >
                 {social.label}
                 <ArrowUpRight className="size-4 text-muted-foreground transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-accent" />
