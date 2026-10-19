@@ -30,7 +30,7 @@ const certifications = [
 
 export function About() {
   return (
-    <section aria-labelledby="about-title" id="about" className="mx-auto max-w-5xl scroll-mt-20 px-6 py-24">
+    <section aria-labelledby="about-title" id="about" className="mx-auto max-w-5xl scroll-mt-28 sm:scroll-mt-20 px-6 py-24">
       <SectionHeading index="01" title="About" id="about-title" />
 
       <div className="grid gap-12 md:grid-cols-5">
