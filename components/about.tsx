@@ -14,12 +14,14 @@ const experience = [
   { period: '2024', role: 'BCA', company: 'P.K. Roy Memorial College, Binod Bihari Mahato Koylanchal University' },
 ]
 
+// Skills still being learned, hidden until ready to show:
+// Backend: JWT auth, Alembic · Databases: Redis · Tools: Postman
 const skills = [
   { group: 'Languages', items: 'Python, JavaScript, Java, C, SQL' },
   { group: 'Frontend', items: 'React, Tailwind CSS, Recharts, MapLibre GL JS, HTML5, CSS3' },
-  { group: 'Backend', items: 'FastAPI, Node.js, REST API design, JWT auth, SQLAlchemy, Alembic' },
-  { group: 'Databases', items: 'PostgreSQL/PostGIS, MongoDB, SQL, Redis' },
-  { group: 'AI & Tools', items: 'Generative AI, Agentic AI, Git, GitHub, Docker, Postman, Vercel, GitHub Copilot' },
+  { group: 'Backend', items: 'FastAPI, Node.js, REST API design, SQLAlchemy' },
+  { group: 'Databases', items: 'PostgreSQL/PostGIS, MongoDB, SQL' },
+  { group: 'AI & Tools', items: 'Generative AI, Agentic AI, Git, GitHub, Docker, Vercel, GitHub Copilot' },
 ]
 
 const certifications = [
