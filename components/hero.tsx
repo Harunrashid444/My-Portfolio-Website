@@ -38,7 +38,7 @@ export function Hero() {
           style={{ animationDelay: '240ms' }}
         >
           I&apos;m a <span className="font-medium text-accent">Full-Stack Developer</span> and MCA
-          student based in Greater Noida, India. I build end-to-end web applications — from
+          student based in Delhi NCR, India. I build end-to-end web applications — from
           FastAPI and PostgreSQL backends to React and Next.js interfaces — and currently lead the
           TerraScope team as <span className="font-medium text-foreground">Technical Lead</span>.
         </p>
