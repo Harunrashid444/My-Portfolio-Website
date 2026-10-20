@@ -31,7 +31,7 @@ export function Research() {
       id="research"
       className="mx-auto max-w-6xl scroll-mt-28 sm:scroll-mt-20 px-6 py-24"
     >
-      <SectionHeading index="03" title="Research" id="research-title" />
+      <SectionHeading index="05" title="Research" id="research-title" />
 
       <Reveal>
         <p className="max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
