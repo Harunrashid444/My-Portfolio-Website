@@ -14,58 +14,6 @@ const experience = [
   { period: '2024', role: 'BCA', company: 'P.K. Roy Memorial College, Binod Bihari Mahato Koylanchal University' },
 ]
 
-// Skills still being learned, hidden until ready to show:
-// Backend: JWT auth, Alembic · Databases: Redis · Tools: Postman
-const skills = [
-  { group: 'Languages', items: 'Python, JavaScript, Java, C, SQL' },
-  { group: 'Frontend', items: 'React, Tailwind CSS, Recharts, MapLibre GL JS, HTML5, CSS3' },
-  { group: 'Backend', items: 'FastAPI, Node.js, REST API design, SQLAlchemy' },
-  { group: 'Databases', items: 'PostgreSQL/PostGIS, MongoDB, SQL' },
-  { group: 'AI & Tools', items: 'Generative AI, Agentic AI, Git, GitHub, Docker, Vercel, GitHub Copilot' },
-]
-
-const certifications = [
-  {
-    title: 'AWS Certified Generative AI Developer – Professional (AIP-C01): Official Practice Question Set',
-    issuer: 'AWS Training & Certification',
-    date: 'Jun 2026',
-  },
-  {
-    title: 'Introduction to Generative AI – Art of the Possible',
-    issuer: 'AWS Training & Certification',
-    date: 'Jun 2026',
-  },
-  {
-    title: 'Cloud Essentials Knowledge Badge Readiness Path (incl. Labs)',
-    issuer: 'AWS Training & Certification',
-    date: null,
-  },
-  { title: 'Introduction to Modern AI', issuer: 'Cisco Networking Academy', date: 'Jun 2026' },
-  {
-    title: 'Getting Started with Artificial Intelligence',
-    issuer: 'IBM SkillsBuild',
-    date: 'Jul 2026',
-    href: 'https://www.credly.com/badges/0cd5c8b4-74ee-4251-a882-f00f0bcd839b',
-  },
-  { title: 'Lab: Troubleshoot Your Code Using IBM Bob', issuer: 'IBM SkillsBuild', date: 'Jul 2026' },
-  {
-    title: 'Edunet University Engagements – Advanced Guided Learning Experience 2026-27',
-    issuer: 'IBM SkillsBuild',
-    date: 'Jul 2026',
-  },
-  {
-    title: 'Introduction to Full-Stack Web Development',
-    issuer: 'VOIS (Vodafone Idea Foundation) × Edunet Foundation',
-    date: 'Jul 2026',
-  },
-  {
-    title: 'Basics of Linux Operating System',
-    issuer: 'VOIS (Vodafone Idea Foundation) × Edunet Foundation',
-    date: 'Jul 2026',
-  },
-  { title: 'EF SET English Certificate — C2 Proficient', issuer: 'EF Education First', date: 'Jun 2026' },
-]
-
 export function About() {
   return (
     <section aria-labelledby="about-title" id="about" className="mx-auto max-w-6xl scroll-mt-28 sm:scroll-mt-20 px-6 py-24">
@@ -115,51 +63,6 @@ export function About() {
           </Reveal>
         ))}
       </dl>
-
-      <Reveal className="mt-20">
-        <h3 className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Skills</h3>
-        <dl className="mt-5 divide-y divide-border border-y border-border">
-          {skills.map((skill) => (
-            <div key={skill.group} className="grid gap-1 py-3 text-sm sm:grid-cols-4 sm:gap-4">
-              <dt className="text-muted-foreground">{skill.group}</dt>
-              <dd className="sm:col-span-3">{skill.items}</dd>
-            </div>
-          ))}
-        </dl>
-      </Reveal>
-
-      <div className="mt-16">
-        <Reveal>
-          <h3 className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
-            Certifications
-          </h3>
-        </Reveal>
-        <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {certifications.map((cert, i) => (
-            <li key={cert.title}>
-              <Reveal delay={(i % 3) * 80} className="h-full">
-                <div className="flex h-full flex-col rounded-xl border border-border bg-card p-5 transition-colors hover:border-accent/50">
-                  <p className="text-pretty text-sm font-medium leading-snug">{cert.title}</p>
-                  <p className="mt-2 text-xs text-muted-foreground">{cert.issuer}</p>
-                  <div className="mt-auto flex items-center justify-between gap-3 pt-4 font-mono text-xs text-muted-foreground">
-                    <span>{cert.date}</span>
-                    {cert.href && (
-                      <a
-                        href={cert.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-accent underline-offset-4 hover:underline"
-                      >
-                        Verify ↗
-                      </a>
-                    )}
-                  </div>
-                </div>
-              </Reveal>
-            </li>
-          ))}
-        </ul>
-      </div>
     </section>
   )
 }
