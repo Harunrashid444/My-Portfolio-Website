@@ -49,7 +49,7 @@ export function Projects() {
       id="projects"
       className="mx-auto max-w-6xl scroll-mt-28 sm:scroll-mt-20 px-6 py-24"
     >
-      <SectionHeading index="02" title="Selected projects" id="projects-title" />
+      <SectionHeading index="04" title="Selected projects" id="projects-title" />
 
       <ul className="flex flex-col gap-16">
         {projects.map((project, i) => (
