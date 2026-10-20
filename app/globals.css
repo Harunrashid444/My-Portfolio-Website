@@ -100,6 +100,9 @@
   html {
     scroll-behavior: smooth;
   }
+  html:has(dialog[open]) {
+    overflow: hidden;
+  }
   body {
     @apply bg-background text-foreground font-sans;
   }
