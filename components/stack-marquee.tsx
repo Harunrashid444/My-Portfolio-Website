@@ -14,13 +14,11 @@ const stack = [
   'PostgreSQL',
   'PostGIS',
   'MongoDB',
-  'Redis',
   'Generative AI',
   'Agentic AI',
   'Docker',
   'Git',
   'GitHub',
-  'Postman',
   'Copilot',
 ]
 
